@@ -1,0 +1,38 @@
+site_name: Documentação do MeDiS
+site_description: Documentação central do ecossistema MeDiS
+nav:
+  - Início: index.md
+  - Visão Geral:
+      - Contexto do Sistema: visao-geral/contexto.md
+      - Arquitetura Geral: visao-geral/arquitetura-geral.md
+      - Componentes do Ecossistema: visao-geral/componentes.md
+      - Fluxos Principais: visao-geral/fluxos-principais.md
+      - Glossário: visao-geral/glossario.md
+  - Repositórios:
+      - medis-front:
+          - Visão Geral: repositorios/medis-front/visao-geral.md
+          - Estrutura: repositorios/medis-front/estrutura.md
+      - medis-back:
+          - Visão Geral: repositorios/medis-back/visao-geral.md
+          - Estrutura: repositorios/medis-back/estrutura.md
+      - medis-modelos:
+          - Visão Geral: repositorios/medis-modelos/visao-geral.md
+          - Estrutura: repositorios/medis-modelos/estrutura.md
+          - Contrato de Metadata: repositorios/medis-modelos/contrato-metadata.md
+  - Operação:
+      - Ambiente e Dependências: operacao/ambiente.md
+      - Execução Local: operacao/execucao-local.md
+      - Variáveis de Ambiente: operacao/variaveis-de-ambiente.md
+  - Referência:
+      - Contratos Entre Serviços: referencia/contratos.md
+      - Convenções de Documentação: referencia/convencoes.md
+  - Decisões:
+      - ADR-0001 — Estrutura da Documentação: decisoes/adr-0001-estrutura-da-documentacao.md
+theme:
+  name: mkdocs
+  user_color_mode_toggle: true
+  locale: pt_BR
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
