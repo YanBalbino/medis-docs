@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Arquitetura Geral - Documentação do MeDiS</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Documentação do MeDiS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Visão Geral</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../contexto/" class="dropdown-item">Contexto do Sistema</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Arquitetura Geral</a>
+</li>
+                                    
+<li>
+    <a href="../componentes/" class="dropdown-item">Componentes do Ecossistema</a>
+</li>
+                                    
+<li>
+    <a href="../fluxos-principais/" class="dropdown-item">Fluxos Principais</a>
+</li>
+                                    
+<li>
+    <a href="../glossario/" class="dropdown-item">Glossário</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Repositórios</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-front</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repositorios/medis-front/visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../../repositorios/medis-front/estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-back</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repositorios/medis-back/visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../../repositorios/medis-back/estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-modelos</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repositorios/medis-modelos/visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../../repositorios/medis-modelos/estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+            
+<li>
+    <a href="../../repositorios/medis-modelos/contrato-metadata/" class="dropdown-item">Contrato de Metadata</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Operação</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../operacao/ambiente/" class="dropdown-item">Ambiente e Dependências</a>
+</li>
+                                    
+<li>
+    <a href="../../operacao/execucao-local/" class="dropdown-item">Execução Local</a>
+</li>
+                                    
+<li>
+    <a href="../../operacao/variaveis-de-ambiente/" class="dropdown-item">Variáveis de Ambiente</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Referência</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../referencia/contratos/" class="dropdown-item">Contratos Entre Serviços</a>
+</li>
+                                    
+<li>
+    <a href="../../referencia/convencoes/" class="dropdown-item">Convenções de Documentação</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Decisões</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../decisoes/adr-0001-estrutura-da-documentacao/" class="dropdown-item">ADR-0001 — Estrutura da Documentação</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../contexto/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../componentes/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#arquitetura-geral" class="nav-link">Arquitetura Geral</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#visao-estrutural" class="nav-link">Visão estrutural</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#diagrama-logico" class="nav-link">Diagrama lógico</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#leitura-do-diagrama" class="nav-link">Leitura do diagrama</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#papel-de-cada-componente" class="nav-link">Papel de cada componente</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modulos-de-dominio-mais-importantes" class="nav-link">Módulos de domínio mais importantes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#padrao-de-comunicacao-entre-servicos" class="nav-link">Padrão de comunicação entre serviços</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#decisoes-arquiteturais-implicitas-no-codigo" class="nav-link">Decisões arquiteturais implícitas no código</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#dados-e-persistencia" class="nav-link">Dados e persistência</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fluxos-arquiteturais-prioritarios" class="nav-link">Fluxos arquiteturais prioritários</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#aspectos-transversais" class="nav-link">Aspectos transversais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pontos-de-atencao-atuais" class="nav-link">Pontos de atenção atuais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#principios-para-evolucao-futura" class="nav-link">Princípios para evolução futura</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#relacao-com-restante-da-documentacao" class="nav-link">Relação com restante da documentação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="arquitetura-geral">Arquitetura Geral<a class="headerlink" href="#arquitetura-geral" title="Permanent link">&para;</a></h1>
+<h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h2>
+<p>Descrever arquitetura macro do ecossistema MeDiS de forma estável, suficiente para manutenção futura, onboarding técnico e evolução dos três repositórios principais.</p>
+<h2 id="visao-estrutural">Visão estrutural<a class="headerlink" href="#visao-estrutural" title="Permanent link">&para;</a></h2>
+<p>Ecossistema MeDiS é composto por quatro blocos principais:</p>
+<ol>
+<li><strong><code>medis-front</code></strong> — aplicação web em Next.js</li>
+<li><strong><code>medis-back</code></strong> — API principal em NestJS</li>
+<li><strong><code>medis-modelos</code></strong> — serviço Django para catálogo e execução de modelos de predição</li>
+<li><strong>PostgreSQL</strong> — base transacional principal do sistema</li>
+</ol>
+<h2 id="diagrama-logico">Diagrama lógico<a class="headerlink" href="#diagrama-logico" title="Permanent link">&para;</a></h2>
+<pre><code class="language-text">[ Usuário ]
+    |
+    v
+[ medis-front | Next.js ]
+    |                  \
+    | HTTP              \ HTTP
+    v                    v
+[ medis-back | NestJS ]  [ medis-modelos | Django + ML ]
+    |
+    | Prisma
+    v
+[ PostgreSQL ]
+</code></pre>
+<h2 id="leitura-do-diagrama">Leitura do diagrama<a class="headerlink" href="#leitura-do-diagrama" title="Permanent link">&para;</a></h2>
+<ul>
+<li>usuário interage apenas com frontend</li>
+<li>frontend consome backend para domínio transacional</li>
+<li>frontend também consome serviço de modelos para metadados dinâmicos e predição</li>
+<li>backend persiste dados clínicos, administrativos e históricos no PostgreSQL</li>
+<li>backend integra com <code>medis-modelos</code> para associação de modelos e persistência de triagens preditivas</li>
+</ul>
+<h2 id="papel-de-cada-componente">Papel de cada componente<a class="headerlink" href="#papel-de-cada-componente" title="Permanent link">&para;</a></h2>
+<h3 id="medis-front"><code>medis-front</code><a class="headerlink" href="#medis-front" title="Permanent link">&para;</a></h3>
+<p>Camada de experiência do usuário.</p>
+<p>Responsabilidades atuais confirmadas no código:</p>
+<ul>
+<li>autenticação e manutenção de sessão no cliente</li>
+<li>navegação por rotas públicas, de paciente e administrativas</li>
+<li>consumo da API NestJS via <code>BASE_URL</code></li>
+<li>consumo direto do serviço Django via <code>ML_API_URL</code></li>
+<li>renderização dinâmica de formulários de predição a partir do schema do modelo</li>
+<li>submissão de triagem padrão</li>
+<li>submissão de predição e posterior gravação no histórico</li>
+<li>visualização de dashboard geográfico</li>
+</ul>
+<p>Características relevantes:</p>
+<ul>
+<li>usa <strong>Next.js Pages Router</strong></li>
+<li>token JWT salvo em <code>localStorage</code></li>
+<li><code>Authorization: Bearer &lt;token&gt;</code> injetado por interceptor Axios</li>
+<li>proteção administrativa também existe no cliente por leitura do papel do usuário salvo localmente</li>
+<li>URLs de integração hoje estão fixas em código (<code>http://localhost:3030</code> e <code>http://localhost:8000</code>)</li>
+</ul>
+<h3 id="medis-back"><code>medis-back</code><a class="headerlink" href="#medis-back" title="Permanent link">&para;</a></h3>
+<p>Núcleo transacional do sistema.</p>
+<p>Responsabilidades atuais confirmadas no código:</p>
+<ul>
+<li>autenticação de usuários</li>
+<li>emissão de JWT</li>
+<li>proteção global de rotas via <code>AuthGuard</code>, com exceções marcadas por <code>@Public()</code></li>
+<li>CRUD e relacionamento de entidades de domínio:</li>
+<li>usuários</li>
+<li>doenças</li>
+<li>perguntas</li>
+<li>sintomas</li>
+<li>critérios de agravamento</li>
+<li>unidades de saúde</li>
+<li>execução da triagem baseada em regras/pontuação</li>
+<li>gravação de histórico de triagens por regra e por modelo</li>
+<li>associação entre doenças e modelos de predição</li>
+<li>agregação de dados para heatmap e dashboard</li>
+<li>geocodificação de endereços para enriquecer triagens com latitude/longitude</li>
+</ul>
+<p>Características relevantes:</p>
+<ul>
+<li>expõe API HTTP na porta <code>3030</code></li>
+<li>habilita CORS para <code>localhost:3000</code> e <code>localhost:3030</code></li>
+<li>usa <code>PrismaService</code> para persistência em PostgreSQL</li>
+<li>usa <code>HttpModule</code> para chamadas ao serviço de modelos e a serviços externos de geocodificação</li>
+</ul>
+<h3 id="medis-modelos"><code>medis-modelos</code><a class="headerlink" href="#medis-modelos" title="Permanent link">&para;</a></h3>
+<p>Serviço especializado em modelos de aprendizado de máquina.</p>
+<p>Responsabilidades atuais confirmadas no código:</p>
+<ul>
+<li>descoberta automática de modelos por diretório</li>
+<li>leitura e exposição de <code>metadata.json</code></li>
+<li>introspecção e validação de arquivos <code>.pkl</code>/<code>.pk1</code></li>
+<li>geração automática de metadados quando ausentes</li>
+<li>importação, atualização e remoção de modelos</li>
+<li>execução de predição por slug</li>
+<li>exposição de schema dinâmico para montagem de formulário</li>
+</ul>
+<p>Características relevantes:</p>
+<ul>
+<li>expõe rotas sob <code>/modelos/</code></li>
+<li>carrega módulos dinamicamente a partir de subdiretórios em <code>modelos/</code></li>
+<li>mantém registro em memória dos modelos carregados</li>
+<li>usa artefatos de modelo e metadados como fonte de verdade da interface dinâmica</li>
+<li>depende de metadados corretos para interpretação de saída, incluindo <code>positive_class_index</code></li>
+</ul>
+<h3 id="postgresql">PostgreSQL<a class="headerlink" href="#postgresql" title="Permanent link">&para;</a></h3>
+<p>Base transacional principal do ecossistema.</p>
+<p>Responsabilidades atuais confirmadas no schema Prisma:</p>
+<ul>
+<li>persistência de usuários</li>
+<li>persistência de doenças e entidades relacionadas</li>
+<li>persistência de triagens por regra (<code>RulesTriage</code>)</li>
+<li>persistência de triagens por modelo (<code>PredictionModelTriage</code>)</li>
+<li>persistência de respostas da triagem padrão</li>
+<li>persistência de associação entre doença e modelo (<code>DiseasePredictionModel</code>)</li>
+<li>persistência de unidades de saúde e surtos</li>
+</ul>
+<h2 id="modulos-de-dominio-mais-importantes">Módulos de domínio mais importantes<a class="headerlink" href="#modulos-de-dominio-mais-importantes" title="Permanent link">&para;</a></h2>
+<h3 id="dominio-clinico">Domínio clínico<a class="headerlink" href="#dominio-clinico" title="Permanent link">&para;</a></h3>
+<p>Centro do sistema em torno de <code>Disease</code>.</p>
+<p>Cada doença pode se relacionar com:
+- sintomas
+- critérios de agravamento
+- perguntas de triagem
+- resultados por faixa de pontuação
+- modelos de predição associados
+- modo ativo de triagem</p>
+<h3 id="dominio-de-triagem">Domínio de triagem<a class="headerlink" href="#dominio-de-triagem" title="Permanent link">&para;</a></h3>
+<p>Sistema mantém dois tipos principais de triagem:</p>
+<h4 id="1-triagem-por-regras">1. Triagem por regras<a class="headerlink" href="#1-triagem-por-regras" title="Permanent link">&para;</a></h4>
+<p>Executada no backend.</p>
+<p>Fluxo atual:
+- frontend envia respostas ao backend
+- backend busca perguntas da doença
+- backend soma pontuações das respostas verdadeiras
+- backend seleciona faixa de resultado
+- backend persiste triagem e respostas no banco
+- backend adiciona coordenadas quando disponíveis ou geocodifica endereço do usuário</p>
+<h4 id="2-triagem-por-modelo-de-predicao">2. Triagem por modelo de predição<a class="headerlink" href="#2-triagem-por-modelo-de-predicao" title="Permanent link">&para;</a></h4>
+<p>Executada em duas etapas separadas.</p>
+<p>Fluxo atual confirmado no frontend:
+- frontend busca schema do modelo no serviço Django
+- frontend monta formulário dinâmico
+- frontend envia parâmetros ao Django para obter predição
+- frontend envia dados também ao backend para persistir histórico da triagem preditiva
+- backend chama novamente o Django para obter resposta oficial e persisti-la no banco
+- backend enriquece registro com geolocalização explícita ou geocodificada</p>
+<p>Observação importante:</p>
+<blockquote>
+<p>Arquitetura atual divide predição dinâmica entre frontend e backend. Frontend usa <code>medis-modelos</code> para experiência imediata; backend usa <code>medis-modelos</code> para gravação oficial no histórico.</p>
+</blockquote>
+<h2 id="padrao-de-comunicacao-entre-servicos">Padrão de comunicação entre serviços<a class="headerlink" href="#padrao-de-comunicacao-entre-servicos" title="Permanent link">&para;</a></h2>
+<h3 id="frontend-backend">Frontend -&gt; Backend<a class="headerlink" href="#frontend-backend" title="Permanent link">&para;</a></h3>
+<p>Usado para:
+- login e registro
+- perfil de usuário
+- doenças e triagens por regra
+- histórico de triagens
+- dashboard geográfico
+- administração de sintomas, perguntas, critérios, doenças e unidades
+- associação de modelos a doenças
+- persistência de triagens por modelo</p>
+<h3 id="frontend-servico-de-modelos">Frontend -&gt; Serviço de modelos<a class="headerlink" href="#frontend-servico-de-modelos" title="Permanent link">&para;</a></h3>
+<p>Usado para:
+- listar modelos
+- obter detalhes de modelo
+- obter schema dinâmico
+- importar, atualizar e remover modelos
+- executar predição para feedback imediato na interface</p>
+<h3 id="backend-servico-de-modelos">Backend -&gt; Serviço de modelos<a class="headerlink" href="#backend-servico-de-modelos" title="Permanent link">&para;</a></h3>
+<p>Usado para:
+- listar modelos disponíveis
+- obter detalhes de modelo
+- filtrar modelos vinculados a uma doença
+- executar predição para persistência de histórico</p>
+<h3 id="backend-servicos-externos">Backend -&gt; serviços externos<a class="headerlink" href="#backend-servicos-externos" title="Permanent link">&para;</a></h3>
+<p>Usado para:
+- geocodificação via Nominatim/OpenStreetMap
+- fallback para coordenadas conhecidas em caso de falha</p>
+<h2 id="decisoes-arquiteturais-implicitas-no-codigo">Decisões arquiteturais implícitas no código<a class="headerlink" href="#decisoes-arquiteturais-implicitas-no-codigo" title="Permanent link">&para;</a></h2>
+<h3 id="backend-como-nucleo-transacional">Backend como núcleo transacional<a class="headerlink" href="#backend-como-nucleo-transacional" title="Permanent link">&para;</a></h3>
+<p>Mesmo quando frontend conversa diretamente com <code>medis-modelos</code>, backend continua sendo fonte de verdade para:
+- autenticação
+- regras de negócio
+- histórico persistido
+- agregações analíticas
+- relacionamento entre entidades clínicas</p>
+<h3 id="servico-de-modelos-como-contexto-especializado">Serviço de modelos como contexto especializado<a class="headerlink" href="#servico-de-modelos-como-contexto-especializado" title="Permanent link">&para;</a></h3>
+<p><code>medis-modelos</code> não mantém base transacional clínica. Papel dele é:
+- gerenciar catálogo de modelos
+- expor metadados
+- encapsular execução de predição
+- validar compatibilidade técnica dos artefatos</p>
+<h3 id="frontend-como-orquestrador-de-experiencia">Frontend como orquestrador de experiência<a class="headerlink" href="#frontend-como-orquestrador-de-experiencia" title="Permanent link">&para;</a></h3>
+<p>Frontend concentra adaptação visual dos fluxos:
+- triagem padrão com perguntas fixas
+- triagem dinâmica baseada em schema
+- área administrativa
+- dashboard com mapas e heatmaps</p>
+<h2 id="dados-e-persistencia">Dados e persistência<a class="headerlink" href="#dados-e-persistencia" title="Permanent link">&para;</a></h2>
+<h3 id="dados-persistidos-no-backend">Dados persistidos no backend<a class="headerlink" href="#dados-persistidos-no-backend" title="Permanent link">&para;</a></h3>
+<ul>
+<li>usuários</li>
+<li>doenças</li>
+<li>perguntas e pontuações</li>
+<li>respostas</li>
+<li>critérios e sintomas</li>
+<li>unidades de saúde</li>
+<li>surtos</li>
+<li>histórico de triagens</li>
+<li>vínculo entre doença e modelo</li>
+</ul>
+<h3 id="dados-mantidos-no-servico-de-modelos">Dados mantidos no serviço de modelos<a class="headerlink" href="#dados-mantidos-no-servico-de-modelos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>artefatos <code>.pkl</code>/<code>.pk1</code></li>
+<li><code>metadata.json</code></li>
+<li>módulos Python gerados/carregados dinamicamente</li>
+<li>registro em memória dos modelos ativos</li>
+</ul>
+<h3 id="dados-mantidos-no-cliente">Dados mantidos no cliente<a class="headerlink" href="#dados-mantidos-no-cliente" title="Permanent link">&para;</a></h3>
+<ul>
+<li>JWT e dados de usuário em <code>localStorage</code></li>
+<li>estado temporário de formulários dinâmicos</li>
+<li>cache de queries no React Query</li>
+</ul>
+<h2 id="fluxos-arquiteturais-prioritarios">Fluxos arquiteturais prioritários<a class="headerlink" href="#fluxos-arquiteturais-prioritarios" title="Permanent link">&para;</a></h2>
+<h3 id="autenticacao">Autenticação<a class="headerlink" href="#autenticacao" title="Permanent link">&para;</a></h3>
+<pre><code class="language-text">Usuário -&gt; Frontend -&gt; Backend -&gt; PostgreSQL
+</code></pre>
+<ul>
+<li>backend valida credenciais</li>
+<li>backend emite JWT</li>
+<li>frontend armazena token e dados do usuário localmente</li>
+<li>requisições seguintes enviam bearer token</li>
+</ul>
+<h3 id="triagem-padrao">Triagem padrão<a class="headerlink" href="#triagem-padrao" title="Permanent link">&para;</a></h3>
+<pre><code class="language-text">Usuário -&gt; Frontend -&gt; Backend -&gt; PostgreSQL
+</code></pre>
+<ul>
+<li>frontend busca doença e perguntas</li>
+<li>usuário responde formulário</li>
+<li>backend calcula escore e resultado</li>
+<li>backend salva triagem, respostas e geodados</li>
+</ul>
+<h3 id="triagem-por-modelo">Triagem por modelo<a class="headerlink" href="#triagem-por-modelo" title="Permanent link">&para;</a></h3>
+<pre><code class="language-text">Usuário -&gt; Frontend -&gt; medis-modelos
+                   \-&gt; Backend -&gt; medis-modelos -&gt; PostgreSQL
+</code></pre>
+<ul>
+<li>frontend usa schema do modelo para montar formulário</li>
+<li>frontend obtém resultado de predição para exibição</li>
+<li>backend executa chamada de predição para persistência oficial</li>
+<li>backend salva resultado e coordenadas</li>
+</ul>
+<h3 id="dashboard-geografico">Dashboard geográfico<a class="headerlink" href="#dashboard-geografico" title="Permanent link">&para;</a></h3>
+<pre><code class="language-text">Frontend -&gt; Backend -&gt; PostgreSQL
+</code></pre>
+<ul>
+<li>backend combina triagens por regra e por modelo</li>
+<li>backend agrega pontos geográficos por doença</li>
+<li>backend retorna heatmap e unidades de saúde</li>
+</ul>
+<h2 id="aspectos-transversais">Aspectos transversais<a class="headerlink" href="#aspectos-transversais" title="Permanent link">&para;</a></h2>
+<h3 id="seguranca">Segurança<a class="headerlink" href="#seguranca" title="Permanent link">&para;</a></h3>
+<p>Estado atual:
+- JWT emitido pelo backend
+- proteção global de rotas no backend
+- algumas rotas públicas explicitamente marcadas
+- verificação administrativa também existe no frontend
+- sessão ainda depende de armazenamento no cliente</p>
+<h3 id="geolocalizacao">Geolocalização<a class="headerlink" href="#geolocalizacao" title="Permanent link">&para;</a></h3>
+<p>Estado atual:
+- triagens podem receber latitude/longitude do cliente
+- se cliente não enviar coordenadas, backend tenta geocodificar endereço do usuário
+- serviço de geocodificação usa cache, rate limit e fallback por cidade/capital
+- dados geográficos alimentam heatmaps e dashboard</p>
+<h3 id="dinamismo-de-modelos">Dinamismo de modelos<a class="headerlink" href="#dinamismo-de-modelos" title="Permanent link">&para;</a></h3>
+<p>Estado atual:
+- schema do formulário vem do modelo
+- interface pode se adaptar sem mudança estrutural no frontend
+- validade funcional depende de metadados consistentes
+- <code>positive_class_index</code> é crítico para interpretação correta da probabilidade</p>
+<h2 id="pontos-de-atencao-atuais">Pontos de atenção atuais<a class="headerlink" href="#pontos-de-atencao-atuais" title="Permanent link">&para;</a></h2>
+<h3 id="1-integracao-direta-do-frontend-com-medis-modelos">1. Integração direta do frontend com <code>medis-modelos</code><a class="headerlink" href="#1-integracao-direta-do-frontend-com-medis-modelos" title="Permanent link">&para;</a></h3>
+<p>Vantagem:
+- feedback rápido para formulário dinâmico</p>
+<p>Trade-off:
+- contrato distribuído entre frontend e Django
+- parte da lógica de integração escapa do backend</p>
+<h3 id="2-configuracao-acoplada-ao-ambiente-local">2. Configuração acoplada ao ambiente local<a class="headerlink" href="#2-configuracao-acoplada-ao-ambiente-local" title="Permanent link">&para;</a></h3>
+<p>Estado atual:
+- URLs de backend e modelos fixas no frontend
+- reduz portabilidade entre ambientes</p>
+<h3 id="3-autorizacao-parcialmente-espelhada-no-cliente">3. Autorização parcialmente espelhada no cliente<a class="headerlink" href="#3-autorizacao-parcialmente-espelhada-no-cliente" title="Permanent link">&para;</a></h3>
+<p>Estado atual:
+- proteção administrativa visual existe no frontend
+- backend ainda deve permanecer fonte final de autorização</p>
+<h3 id="4-dependencia-forte-de-metadados-dos-modelos">4. Dependência forte de metadados dos modelos<a class="headerlink" href="#4-dependencia-forte-de-metadados-dos-modelos" title="Permanent link">&para;</a></h3>
+<p>Estado atual:
+- erro em <code>metadata.json</code> compromete formulário, validação e interpretação
+- geração automática ajuda, mas não substitui revisão semântica</p>
+<h3 id="5-dupla-chamada-de-predicao-no-fluxo-dinamico">5. Dupla chamada de predição no fluxo dinâmico<a class="headerlink" href="#5-dupla-chamada-de-predicao-no-fluxo-dinamico" title="Permanent link">&para;</a></h3>
+<p>Estado atual:
+- frontend chama Django para mostrar resultado
+- backend chama Django de novo para persistir histórico
+- arquitetura futura pode optar por centralização maior no backend</p>
+<h2 id="principios-para-evolucao-futura">Princípios para evolução futura<a class="headerlink" href="#principios-para-evolucao-futura" title="Permanent link">&para;</a></h2>
+<ul>
+<li>manter backend como fonte de verdade transacional</li>
+<li>explicitar contratos HTTP entre serviços</li>
+<li>reduzir acoplamento de configuração por ambiente</li>
+<li>tratar metadados de modelo como contrato versionado</li>
+<li>documentar decisões arquiteturais via ADR</li>
+<li>separar claramente fluxo de exibição imediata e fluxo de persistência oficial</li>
+</ul>
+<h2 id="relacao-com-restante-da-documentacao">Relação com restante da documentação<a class="headerlink" href="#relacao-com-restante-da-documentacao" title="Permanent link">&para;</a></h2>
+<p>Esta página responde <strong>como ecossistema é organizado</strong>.</p>
+<p>Próximas páginas complementares:
+- <code>visao-geral/componentes.md</code> — resumo de responsabilidades por sistema
+- <code>visao-geral/fluxos-principais.md</code> — fluxos funcionais em maior detalhe
+- <code>referencia/contratos.md</code> — endpoints, payloads e respostas
+- <code>repositorios/*</code> — implementação e estrutura de cada código-base</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

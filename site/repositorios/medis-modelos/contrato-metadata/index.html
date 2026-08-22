@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Contrato de Metadata - Documentação do MeDiS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Documentação do MeDiS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Visão Geral</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../visao-geral/contexto/" class="dropdown-item">Contexto do Sistema</a>
+</li>
+                                    
+<li>
+    <a href="../../../visao-geral/arquitetura-geral/" class="dropdown-item">Arquitetura Geral</a>
+</li>
+                                    
+<li>
+    <a href="../../../visao-geral/componentes/" class="dropdown-item">Componentes do Ecossistema</a>
+</li>
+                                    
+<li>
+    <a href="../../../visao-geral/fluxos-principais/" class="dropdown-item">Fluxos Principais</a>
+</li>
+                                    
+<li>
+    <a href="../../../visao-geral/glossario/" class="dropdown-item">Glossário</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Repositórios</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-front</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../medis-front/visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../../medis-front/estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-back</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../medis-back/visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../../medis-back/estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-modelos</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Contrato de Metadata</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Operação</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../operacao/ambiente/" class="dropdown-item">Ambiente e Dependências</a>
+</li>
+                                    
+<li>
+    <a href="../../../operacao/execucao-local/" class="dropdown-item">Execução Local</a>
+</li>
+                                    
+<li>
+    <a href="../../../operacao/variaveis-de-ambiente/" class="dropdown-item">Variáveis de Ambiente</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Referência</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../referencia/contratos/" class="dropdown-item">Contratos Entre Serviços</a>
+</li>
+                                    
+<li>
+    <a href="../../../referencia/convencoes/" class="dropdown-item">Convenções de Documentação</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Decisões</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../decisoes/adr-0001-estrutura-da-documentacao/" class="dropdown-item">ADR-0001 — Estrutura da Documentação</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../estrutura/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../../operacao/ambiente/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#contrato-de-metadatajson" class="nav-link">Contrato de metadata.json</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#estrutura-minima" class="nav-link">Estrutura mínima</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#formato-canonico" class="nav-link">Formato canônico</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#1-secao-model" class="nav-link">1. Seção model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-secao-features" class="nav-link">2. Seção features</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-secao-output" class="nav-link">3. Seção output</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-contrato-de-request-de-predicao" class="nav-link">4. Contrato de request de predição</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-contrato-de-response-de-predicao" class="nav-link">5. Contrato de response de predição</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-compatibilidade-legada" class="nav-link">6. Compatibilidade legada</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#7-validacao-antes-de-disponibilizar-modelo" class="nav-link">7. Validação antes de disponibilizar modelo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#8-inconsistencias-atuais-a-corrigir" class="nav-link">8. Inconsistências atuais a corrigir</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#9-versionamento-do-contrato" class="nav-link">9. Versionamento do contrato</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#referencias-de-implementacao" class="nav-link">Referências de implementação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="contrato-de-metadatajson">Contrato de <code>metadata.json</code><a class="headerlink" href="#contrato-de-metadatajson" title="Permanent link">&para;</a></h1>
+<h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h2>
+<p>Definir formato oficial para descrever modelos de predição no MeDiS.</p>
+<p>O metadata é consumido por:</p>
+<ul>
+<li>serviço Django, durante carga e predição</li>
+<li>frontend, para montar formulários dinamicamente</li>
+<li>administradores, para identificar e versionar modelos</li>
+<li>documentação e ferramentas de validação</li>
+</ul>
+<blockquote>
+<p>Esta página formaliza contrato atual e proposta de formato canônico. Ela não altera automaticamente modelos ou código.</p>
+</blockquote>
+<h2 id="estrutura-minima">Estrutura mínima<a class="headerlink" href="#estrutura-minima" title="Permanent link">&para;</a></h2>
+<p>Cada modelo deve possuir diretório próprio:</p>
+<pre><code class="language-text">modelos/
+  meu_modelo/
+    __init__.py
+    metadata.json
+    modelo.pkl ou modelo.pk1
+</code></pre>
+<p><code>medis-modelos</code> descobre subdiretórios contendo <code>metadata.json</code> e carrega o módulo Python correspondente.</p>
+<h2 id="formato-canonico">Formato canônico<a class="headerlink" href="#formato-canonico" title="Permanent link">&para;</a></h2>
+<pre><code class="language-json">{
+  &quot;model&quot;: {
+    &quot;slug&quot;: &quot;covid_predicao_mortalidade&quot;,
+    &quot;name&quot;: &quot;Covid Predição Mortalidade&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;description&quot;: &quot;Modelo de predição usando GradientBoostingClassifier&quot;,
+    &quot;algorithm&quot;: &quot;GradientBoostingClassifier&quot;,
+    &quot;library&quot;: &quot;sklearn&quot;,
+    &quot;prediction_type&quot;: &quot;mortalidade&quot;,
+    &quot;n_features&quot;: 8,
+    &quot;created_at&quot;: &quot;2026-05-29T18:06:19.594080&quot;,
+    &quot;updated_at&quot;: &quot;2026-05-29T18:06:19.594080&quot;
+  },
+  &quot;features&quot;: [
+    {
+      &quot;name&quot;: &quot;faixaetaria&quot;,
+      &quot;label&quot;: &quot;Faixa etária&quot;,
+      &quot;type&quot;: &quot;int&quot;,
+      &quot;field_type&quot;: &quot;select&quot;,
+      &quot;required&quot;: true,
+      &quot;order&quot;: 1,
+      &quot;description&quot;: &quot;Categoria etária do paciente&quot;,
+      &quot;options&quot;: [
+        {
+          &quot;label&quot;: &quot;0-11 anos&quot;,
+          &quot;value&quot;: 0
+        },
+        {
+          &quot;label&quot;: &quot;12-17 anos&quot;,
+          &quot;value&quot;: 1
+        }
+      ]
+    }
+  ],
+  &quot;output&quot;: {
+    &quot;type&quot;: &quot;mortalidade&quot;,
+    &quot;positive_class_index&quot;: 0,
+    &quot;thresholds&quot;: {
+      &quot;low&quot;: 0.15,
+      &quot;high&quot;: 0.4
+    },
+    &quot;messages&quot;: {
+      &quot;low&quot;: &quot;Risco baixo de mortalidade&quot;,
+      &quot;moderate&quot;: &quot;Risco moderado de mortalidade&quot;,
+      &quot;high&quot;: &quot;Risco alto de mortalidade&quot;
+    }
+  }
+}
+</code></pre>
+<hr />
+<h2 id="1-secao-model">1. Seção <code>model</code><a class="headerlink" href="#1-secao-model" title="Permanent link">&para;</a></h2>
+<p>Identifica modelo e fornece informações para interface, administração e rastreabilidade.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th style="text-align: right;">Obrigatório</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>slug</code></td>
+<td>string</td>
+<td style="text-align: right;">sim</td>
+<td>Identificador único usado nas URLs</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td style="text-align: right;">sim</td>
+<td>Nome exibido ao usuário</td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Versão do modelo/metadados</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Descrição funcional</td>
+</tr>
+<tr>
+<td><code>algorithm</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Algoritmo usado</td>
+</tr>
+<tr>
+<td><code>library</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Biblioteca de treinamento/execução</td>
+</tr>
+<tr>
+<td><code>prediction_type</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Resultado previsto, por exemplo <code>mortalidade</code></td>
+</tr>
+<tr>
+<td><code>n_features</code></td>
+<td>integer</td>
+<td style="text-align: right;">recomendado</td>
+<td>Número esperado de features</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>ISO 8601 string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Data de criação</td>
+</tr>
+<tr>
+<td><code>updated_at</code></td>
+<td>ISO 8601 string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Data da última atualização</td>
+</tr>
+</tbody>
+</table>
+<h3 id="regras">Regras<a class="headerlink" href="#regras" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>slug</code> deve estar em snake_case</li>
+<li>usar somente letras minúsculas, números e <code>_</code></li>
+<li><code>slug</code> deve corresponder ao diretório do modelo</li>
+<li><code>name</code> e <code>description</code> são nomes canônicos</li>
+<li><code>nome</code> e <code>descricao</code> pertencem ao formato legado e não devem ser usados em novos modelos</li>
+</ul>
+<p>Exemplo válido:</p>
+<pre><code class="language-text">covid_predicao_mortalidade
+</code></pre>
+<p>Exemplos inválidos:</p>
+<pre><code class="language-text">Covid Predição Mortalidade
+covid-predicao-mortalidade
+covid/predicao
+</code></pre>
+<hr />
+<h2 id="2-secao-features">2. Seção <code>features</code><a class="headerlink" href="#2-secao-features" title="Permanent link">&para;</a></h2>
+<p><code>features</code> é lista ordenada de campos que modelo espera receber.</p>
+<h3 id="campos-de-feature">Campos de feature<a class="headerlink" href="#campos-de-feature" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th style="text-align: right;">Obrigatório</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td style="text-align: right;">sim</td>
+<td>Nome técnico enviado ao modelo</td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Nome exibido na interface</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td style="text-align: right;">sim</td>
+<td>Tipo do valor enviado ao modelo</td>
+</tr>
+<tr>
+<td><code>field_type</code></td>
+<td>string</td>
+<td style="text-align: right;">sim</td>
+<td>Tipo de controle visual</td>
+</tr>
+<tr>
+<td><code>required</code></td>
+<td>boolean</td>
+<td style="text-align: right;">sim</td>
+<td>Indica se campo deve ser preenchido</td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td>integer</td>
+<td style="text-align: right;">sim</td>
+<td>Ordem de exibição</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Explicação do campo</td>
+</tr>
+<tr>
+<td><code>options</code></td>
+<td>array</td>
+<td style="text-align: right;">condicional</td>
+<td>Opções para campos enumerados</td>
+</tr>
+<tr>
+<td><code>validation</code></td>
+<td>object</td>
+<td style="text-align: right;">condicional</td>
+<td>Limites e regras numéricas</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td>string</td>
+<td style="text-align: right;">opcional</td>
+<td>Unidade de medida</td>
+</tr>
+</tbody>
+</table>
+<h3 id="valores-aceitos-em-type">Valores aceitos em <code>type</code><a class="headerlink" href="#valores-aceitos-em-type" title="Permanent link">&para;</a></h3>
+<p>Valores atuais observados:</p>
+<ul>
+<li><code>int</code></li>
+<li><code>float</code></li>
+<li><code>number</code></li>
+<li><code>bool</code></li>
+<li><code>string</code></li>
+</ul>
+<p>O valor deve corresponder ao tipo realmente aceito pelo artefato de ML.</p>
+<h3 id="valores-aceitos-em-field_type">Valores aceitos em <code>field_type</code><a class="headerlink" href="#valores-aceitos-em-field_type" title="Permanent link">&para;</a></h3>
+<p>Valores usados pelo frontend:</p>
+<ul>
+<li><code>select</code> — seleção entre opções</li>
+<li><code>radio</code> — escolha única visível</li>
+<li><code>checkbox</code> — seleção booleana ou múltipla, conforme implementação</li>
+<li><code>number</code> — entrada numérica</li>
+</ul>
+<h3 id="options"><code>options</code><a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
+<p>Usar lista de objetos, não mapa:</p>
+<pre><code class="language-json">&quot;options&quot;: [
+  {
+    &quot;label&quot;: &quot;Sim&quot;,
+    &quot;value&quot;: 1
+  },
+  {
+    &quot;label&quot;: &quot;Não&quot;,
+    &quot;value&quot;: 0
+  }
+]
+</code></pre>
+<p>Regras:</p>
+<ul>
+<li><code>label</code> é texto de apresentação</li>
+<li><code>value</code> é valor enviado ao modelo</li>
+<li>valores devem ser compatíveis com <code>type</code></li>
+<li>ordem da lista deve ser preservada</li>
+</ul>
+<h3 id="validation"><code>validation</code><a class="headerlink" href="#validation" title="Permanent link">&para;</a></h3>
+<p>Para campos numéricos:</p>
+<pre><code class="language-json">&quot;validation&quot;: {
+  &quot;min&quot;: 0,
+  &quot;max&quot;: 120
+}
+</code></pre>
+<p>Campos possíveis:</p>
+<ul>
+<li><code>min</code></li>
+<li><code>max</code></li>
+</ul>
+<p>Frontend usa esses valores para validação visual. Serviço de modelos deve continuar validando requisitos essenciais no backend do modelo.</p>
+<hr />
+<h2 id="3-secao-output">3. Seção <code>output</code><a class="headerlink" href="#3-secao-output" title="Permanent link">&para;</a></h2>
+<p>Descreve resultado, interpretação e classe positiva.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th style="text-align: right;">Obrigatório</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Tipo de resultado previsto</td>
+</tr>
+<tr>
+<td><code>positive_class_index</code></td>
+<td>integer</td>
+<td style="text-align: right;">sim para classificadores</td>
+<td>Índice da classe positiva em <code>predict_proba</code></td>
+</tr>
+<tr>
+<td><code>thresholds.low</code></td>
+<td>number</td>
+<td style="text-align: right;">recomendado</td>
+<td>Limite superior de risco baixo</td>
+</tr>
+<tr>
+<td><code>thresholds.high</code></td>
+<td>number</td>
+<td style="text-align: right;">recomendado</td>
+<td>Limite superior de risco moderado</td>
+</tr>
+<tr>
+<td><code>messages.low</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Mensagem para risco baixo</td>
+</tr>
+<tr>
+<td><code>messages.moderate</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Mensagem para risco moderado</td>
+</tr>
+<tr>
+<td><code>messages.high</code></td>
+<td>string</td>
+<td style="text-align: right;">recomendado</td>
+<td>Mensagem para risco alto</td>
+</tr>
+</tbody>
+</table>
+<h3 id="thresholds">Thresholds<a class="headerlink" href="#thresholds" title="Permanent link">&para;</a></h3>
+<p>Thresholds são representados entre <code>0</code> e <code>1</code> no metadata:</p>
+<pre><code class="language-json">&quot;thresholds&quot;: {
+  &quot;low&quot;: 0.15,
+  &quot;high&quot;: 0.4
+}
+</code></pre>
+<p>O serviço converte esses valores para percentual ao produzir interpretação.</p>
+<p>Regra atual:</p>
+<ul>
+<li><code>probability &lt;= low</code> — baixo</li>
+<li><code>low &lt; probability &lt;= high</code> — moderado</li>
+<li><code>probability &gt; high</code> — alto</li>
+</ul>
+<h3 id="positive_class_index"><code>positive_class_index</code><a class="headerlink" href="#positive_class_index" title="Permanent link">&para;</a></h3>
+<p>Define qual posição de <code>predict_proba</code> representa classe positiva.</p>
+<p>Exemplo:</p>
+<pre><code class="language-python">probabilities = model.predict_proba(data)
+positive_probability = probabilities[0][positive_class_index]
+</code></pre>
+<p>Valor não pode ser escolhido por convenção genérica. Deve corresponder à ordem real de <code>model.classes_</code>.</p>
+<blockquote>
+<p>Valor incorreto pode inverter interpretação clínica do resultado.</p>
+</blockquote>
+<hr />
+<h2 id="4-contrato-de-request-de-predicao">4. Contrato de request de predição<a class="headerlink" href="#4-contrato-de-request-de-predicao" title="Permanent link">&para;</a></h2>
+<p>O request para Django deve usar nomes técnicos de features:</p>
+<pre><code class="language-json">{
+  &quot;faixaetaria&quot;: 5,
+  &quot;qntVacinas&quot;: 2,
+  &quot;dorDeCabeca&quot;: 1,
+  &quot;diabetes&quot;: 0
+}
+</code></pre>
+<p>Regras:</p>
+<ul>
+<li>enviar valores compatíveis com cada feature</li>
+<li>incluir todos os campos <code>required: true</code></li>
+<li>não usar labels como chaves</li>
+<li>não incluir dados de contexto clínico que não sejam features</li>
+<li>contexto de usuário, doença e geolocalização pertence ao backend, não ao modelo</li>
+</ul>
+<h2 id="5-contrato-de-response-de-predicao">5. Contrato de response de predição<a class="headerlink" href="#5-contrato-de-response-de-predicao" title="Permanent link">&para;</a></h2>
+<p>Resposta atual típica:</p>
+<pre><code class="language-json">{
+  &quot;model&quot;: {
+    &quot;slug&quot;: &quot;covid_predicao_mortalidade&quot;,
+    &quot;name&quot;: &quot;Covid Predição Mortalidade&quot;
+  },
+  &quot;request&quot;: {
+    &quot;faixaetaria&quot;: 5,
+    &quot;diabetes&quot;: 0
+  },
+  &quot;message&quot;: &quot;Risco baixo de mortalidade&quot;,
+  &quot;probability&quot;: 12.4
+}
+</code></pre>
+<p>Campos:</p>
+<ul>
+<li><code>model</code> — resumo do modelo usado</li>
+<li><code>request</code> — parâmetros recebidos</li>
+<li><code>message</code> — interpretação textual</li>
+<li><code>probability</code> — probabilidade percentual</li>
+</ul>
+<h2 id="6-compatibilidade-legada">6. Compatibilidade legada<a class="headerlink" href="#6-compatibilidade-legada" title="Permanent link">&para;</a></h2>
+<p>Formato antigo documentado em README usava:</p>
+<pre><code class="language-json">{
+  &quot;model&quot;: {
+    &quot;slug&quot;: &quot;modelo_1&quot;,
+    &quot;nome&quot;: &quot;Modelo 1&quot;,
+    &quot;descricao&quot;: &quot;Descrição&quot;
+  },
+  &quot;params&quot;: {
+    &quot;param1&quot;: {
+      &quot;title&quot;: &quot;Parâmetro 1&quot;,
+      &quot;options&quot;: {
+        &quot;Sim&quot;: 1,
+        &quot;Não&quot;: 0
+      }
+    }
+  }
+}
+</code></pre>
+<p>Esse formato não deve ser usado para novos modelos.</p>
+<h3 id="diferencas">Diferenças<a class="headerlink" href="#diferencas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Legado</th>
+<th>Canônico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nome</code></td>
+<td><code>name</code></td>
+</tr>
+<tr>
+<td><code>descricao</code></td>
+<td><code>description</code></td>
+</tr>
+<tr>
+<td><code>params</code></td>
+<td><code>features</code></td>
+</tr>
+<tr>
+<td><code>options</code> como mapa</td>
+<td><code>options</code> como lista</td>
+</tr>
+<tr>
+<td>sem <code>output</code> estruturado</td>
+<td><code>output</code> com thresholds e classe positiva</td>
+</tr>
+</tbody>
+</table>
+<p>Se compatibilidade for necessária, ela deve existir em adaptador explícito, não em formatos ambíguos misturados.</p>
+<h2 id="7-validacao-antes-de-disponibilizar-modelo">7. Validação antes de disponibilizar modelo<a class="headerlink" href="#7-validacao-antes-de-disponibilizar-modelo" title="Permanent link">&para;</a></h2>
+<p>Checklist:</p>
+<ul>
+<li>[ ] slug válido e único</li>
+<li>[ ] <code>metadata.json</code> é JSON válido</li>
+<li>[ ] <code>model.slug</code> corresponde ao diretório</li>
+<li>[ ] arquivo <code>.pkl</code>/<code>.pk1</code> abre corretamente</li>
+<li>[ ] modelo possui features identificáveis</li>
+<li>[ ] <code>n_features</code> corresponde às features declaradas</li>
+<li>[ ] cada feature possui <code>name</code>, <code>type</code>, <code>field_type</code>, <code>required</code> e <code>order</code></li>
+<li>[ ] opções correspondem ao tipo do campo</li>
+<li>[ ] thresholds estão entre <code>0</code> e <code>1</code></li>
+<li>[ ] <code>positive_class_index</code> corresponde a <code>model.classes_</code></li>
+<li>[ ] predição de teste retorna probabilidade válida</li>
+<li>[ ] mensagem de cada faixa foi revisada</li>
+<li>[ ] metadata e artefato têm mesma versão lógica</li>
+</ul>
+<h2 id="8-inconsistencias-atuais-a-corrigir">8. Inconsistências atuais a corrigir<a class="headerlink" href="#8-inconsistencias-atuais-a-corrigir" title="Permanent link">&para;</a></h2>
+<h3 id="indice-padrao-da-classe-positiva">Índice padrão da classe positiva<a class="headerlink" href="#indice-padrao-da-classe-positiva" title="Permanent link">&para;</a></h3>
+<p>Há diferença entre código de geração e execução:</p>
+<ul>
+<li>geração automática informa <code>positive_class_index = 0</code> como padrão</li>
+<li><code>MLModel.predict()</code> usa fallback <code>1</code> quando campo não existe</li>
+</ul>
+<p>Decisão necessária: exigir campo explicitamente ou definir um único padrão validado.</p>
+<h3 id="campos-opcionais-no-frontend">Campos opcionais no frontend<a class="headerlink" href="#campos-opcionais-no-frontend" title="Permanent link">&para;</a></h3>
+<p>Frontend espera alguns campos modernos, como <code>model_info</code>, <code>features</code> e <code>output</code>. O contrato canônico deve usar <code>model</code>, <code>features</code> e <code>output</code>, mantendo transformação centralizada se houver legado.</p>
+<h3 id="validacao-do-schema">Validação do schema<a class="headerlink" href="#validacao-do-schema" title="Permanent link">&para;</a></h3>
+<p>O importador valida compatibilidade do arquivo de modelo, mas metadata também precisa de validação estrutural e semântica completa.</p>
+<h2 id="9-versionamento-do-contrato">9. Versionamento do contrato<a class="headerlink" href="#9-versionamento-do-contrato" title="Permanent link">&para;</a></h2>
+<p>Quando formato mudar de modo incompatível, adicionar versão explícita:</p>
+<pre><code class="language-json">{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;model&quot;: {},
+  &quot;features&quot;: [],
+  &quot;output&quot;: {}
+}
+</code></pre>
+<p>Até versão ser implementada no código, esta documentação considera formato canônico como <code>1.0</code> conceitual.</p>
+<h2 id="referencias-de-implementacao">Referências de implementação<a class="headerlink" href="#referencias-de-implementacao" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>medis-modelos/modelos/base_model.py</code></li>
+<li><code>medis-modelos/modelos/api.py</code></li>
+<li><code>medis-modelos/modelos/services/models_crud.py</code></li>
+<li><code>medis-modelos/modelos/introspection.py</code></li>
+<li><code>medis-modelos/scripts/generate_metadata.py</code></li>
+<li><code>medis-front/src/utils/queries.ts</code></li>
+<li><code>medis-front/src/components/DynamicPredictionForm.tsx</code></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

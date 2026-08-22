@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Contratos Entre Serviços - Documentação do MeDiS</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Documentação do MeDiS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Visão Geral</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../visao-geral/contexto/" class="dropdown-item">Contexto do Sistema</a>
+</li>
+                                    
+<li>
+    <a href="../../visao-geral/arquitetura-geral/" class="dropdown-item">Arquitetura Geral</a>
+</li>
+                                    
+<li>
+    <a href="../../visao-geral/componentes/" class="dropdown-item">Componentes do Ecossistema</a>
+</li>
+                                    
+<li>
+    <a href="../../visao-geral/fluxos-principais/" class="dropdown-item">Fluxos Principais</a>
+</li>
+                                    
+<li>
+    <a href="../../visao-geral/glossario/" class="dropdown-item">Glossário</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Repositórios</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-front</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repositorios/medis-front/visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../../repositorios/medis-front/estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-back</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repositorios/medis-back/visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../../repositorios/medis-back/estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">medis-modelos</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repositorios/medis-modelos/visao-geral/" class="dropdown-item">Visão Geral</a>
+</li>
+            
+<li>
+    <a href="../../repositorios/medis-modelos/estrutura/" class="dropdown-item">Estrutura</a>
+</li>
+            
+<li>
+    <a href="../../repositorios/medis-modelos/contrato-metadata/" class="dropdown-item">Contrato de Metadata</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Operação</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../operacao/ambiente/" class="dropdown-item">Ambiente e Dependências</a>
+</li>
+                                    
+<li>
+    <a href="../../operacao/execucao-local/" class="dropdown-item">Execução Local</a>
+</li>
+                                    
+<li>
+    <a href="../../operacao/variaveis-de-ambiente/" class="dropdown-item">Variáveis de Ambiente</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Referência</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Contratos Entre Serviços</a>
+</li>
+                                    
+<li>
+    <a href="../convencoes/" class="dropdown-item">Convenções de Documentação</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Decisões</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../decisoes/adr-0001-estrutura-da-documentacao/" class="dropdown-item">ADR-0001 — Estrutura da Documentação</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../operacao/variaveis-de-ambiente/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../convencoes/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#contratos-entre-servicos" class="nav-link">Contratos Entre Serviços</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#objetivo" class="nav-link">Objetivo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#enderecos-locais" class="nav-link">Endereços locais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regras-gerais" class="nav-link">Regras gerais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1-frontend-backend" class="nav-link">1. Frontend -&gt; Backend</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11-autenticacao" class="nav-link">1.1 Autenticação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#12-doencas-e-triagem-padrao" class="nav-link">1.2 Doenças e triagem padrão</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#13-modelos-via-backend" class="nav-link">1.3 Modelos via backend</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#14-dashboard-e-geodados" class="nav-link">1.4 Dashboard e geodados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#15-entidades-crud" class="nav-link">1.5 Entidades CRUD</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#2-frontend-medis-modelos" class="nav-link">2. Frontend -&gt; medis-modelos</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#21-listar-modelos" class="nav-link">2.1 Listar modelos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#22-detalhes-do-modelo" class="nav-link">2.2 Detalhes do modelo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#23-schema-para-formulario-dinamico" class="nav-link">2.3 Schema para formulário dinâmico</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#24-executar-predicao" class="nav-link">2.4 Executar predição</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#25-importar-modelo" class="nav-link">2.5 Importar modelo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#26-atualizar-modelo" class="nav-link">2.6 Atualizar modelo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#27-remover-modelo" class="nav-link">2.7 Remover modelo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#3-backend-medis-modelos" class="nav-link">3. Backend -&gt; medis-modelos</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#contrato-de-predicao-do-backend" class="nav-link">Contrato de predição do backend</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#resposta-consumida-pelo-backend" class="nav-link">Resposta consumida pelo backend</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#4-contrato-de-modelo-e-metadados" class="nav-link">4. Contrato de modelo e metadados</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#arquivos-por-modelo" class="nav-link">Arquivos por modelo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#interface-publica-do-modulo" class="nav-link">Interface pública do módulo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#features" class="nav-link">Features</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#saida" class="nav-link">Saída</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#5-tratamento-de-erros" class="nav-link">5. Tratamento de erros</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#backend_1" class="nav-link">Backend</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#servico-de-modelos_1" class="nav-link">Serviço de modelos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regra-para-clientes" class="nav-link">Regra para clientes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#6-divergencias-e-riscos-contratuais-conhecidos" class="nav-link">6. Divergências e riscos contratuais conhecidos</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#61-rota-legada-models" class="nav-link">6.1 Rota legada /models</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#62-nomes-de-campos-antigos-e-novos" class="nav-link">6.2 Nomes de campos antigos e novos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#63-autorizacao-de-endpoints" class="nav-link">6.3 Autorização de endpoints</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#64-contrato-duplicado-de-predicao" class="nav-link">6.4 Contrato duplicado de predição</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#7-proxima-evolucao-do-contrato" class="nav-link">7. Próxima evolução do contrato</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="contratos-entre-servicos">Contratos Entre Serviços<a class="headerlink" href="#contratos-entre-servicos" title="Permanent link">&para;</a></h1>
+<h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h2>
+<p>Registrar contratos HTTP atualmente implementados entre <code>medis-front</code>, <code>medis-back</code> e <code>medis-modelos</code>.</p>
+<p>Esta página descreve o estado do código. Não representa necessariamente o contrato desejado para produção.</p>
+<h2 id="enderecos-locais">Endereços locais<a class="headerlink" href="#enderecos-locais" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Serviço</th>
+<th style="text-align: right;">Endereço local</th>
+<th>Base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frontend</td>
+<td style="text-align: right;"><code>http://localhost:3000</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td style="text-align: right;"><code>http://localhost:3030</code></td>
+<td><code>/</code></td>
+</tr>
+<tr>
+<td>Serviço de modelos</td>
+<td style="text-align: right;"><code>http://localhost:8000</code></td>
+<td><code>/modelos/</code></td>
+</tr>
+</tbody>
+</table>
+<p>O frontend define esses endereços em <code>src/utils/consts.ts</code>.</p>
+<h2 id="regras-gerais">Regras gerais<a class="headerlink" href="#regras-gerais" title="Permanent link">&para;</a></h2>
+<h3 id="backend">Backend<a class="headerlink" href="#backend" title="Permanent link">&para;</a></h3>
+<ul>
+<li>API NestJS escuta na porta <code>3030</code></li>
+<li><code>ValidationPipe</code> global aplica transformação de tipos</li>
+<li>CORS aceita atualmente <code>http://localhost:3000</code> e <code>http://localhost:3030</code></li>
+<li>autenticação usa <code>Authorization: Bearer &lt;JWT&gt;</code></li>
+<li><code>AuthGuard</code> é global</li>
+<li>rotas marcadas com <code>@Public()</code> não exigem autenticação no guard atual</li>
+</ul>
+<h3 id="servico-de-modelos">Serviço de modelos<a class="headerlink" href="#servico-de-modelos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>API Django é montada sob <code>/modelos/</code></li>
+<li>endpoints usam JSON, exceto importação/atualização de arquivos</li>
+<li>slug é normalizado para minúsculas e substitui hífen por underscore</li>
+<li>respostas de erro nem sempre seguem um único formato histórico</li>
+</ul>
+<h3 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h3>
+<ul>
+<li>usa Axios para chamadas</li>
+<li>chamadas ao backend passam pelo cliente <code>api</code></li>
+<li>chamadas ao serviço de modelos usam Axios diretamente</li>
+<li>chamadas ao backend incluem JWT pelo interceptor</li>
+<li>chamadas diretas ao Django não passam pelo interceptor do backend</li>
+</ul>
+<hr />
+<h1 id="1-frontend-backend">1. Frontend -&gt; Backend<a class="headerlink" href="#1-frontend-backend" title="Permanent link">&para;</a></h1>
+<p>Base local:</p>
+<pre><code class="language-text">http://localhost:3030
+</code></pre>
+<h2 id="11-autenticacao">1.1 Autenticação<a class="headerlink" href="#11-autenticacao" title="Permanent link">&para;</a></h2>
+<h3 id="login">Login<a class="headerlink" href="#login" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">POST /auth/login
+Content-Type: application/json
+</code></pre>
+<p>Request:</p>
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;usuario@example.com&quot;,
+  &quot;password&quot;: &quot;senha&quot;
+}
+</code></pre>
+<p>Response de sucesso:</p>
+<pre><code class="language-json">{
+  &quot;access_token&quot;: &quot;&lt;jwt&gt;&quot;,
+  &quot;user&quot;: {
+    &quot;id&quot;: &quot;uuid&quot;,
+    &quot;email&quot;: &quot;usuario@example.com&quot;,
+    &quot;name&quot;: &quot;Nome do usuário&quot;,
+    &quot;role&quot;: &quot;USER&quot;
+  }
+}
+</code></pre>
+<p>Regras de validação:</p>
+<ul>
+<li><code>email</code> deve ser válido</li>
+<li><code>password</code> é obrigatório</li>
+</ul>
+<h3 id="cadastro">Cadastro<a class="headerlink" href="#cadastro" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">POST /auth/register
+Content-Type: application/json
+</code></pre>
+<p>Request atual:</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;Nome do usuário&quot;,
+  &quot;email&quot;: &quot;usuario@example.com&quot;,
+  &quot;password&quot;: &quot;senha&quot;,
+  &quot;confirm_password&quot;: &quot;senha&quot;,
+  &quot;address&quot;: &quot;Rua Exemplo&quot;,
+  &quot;phone&quot;: &quot;84999999999&quot;,
+  &quot;city&quot;: &quot;Mossoró&quot;,
+  &quot;cpf&quot;: &quot;00000000000&quot;,
+  &quot;birthdate&quot;: &quot;2000-01-01&quot;,
+  &quot;number&quot;: &quot;100&quot;,
+  &quot;complement&quot;: &quot;Apto 1&quot;,
+  &quot;state&quot;: &quot;Rio Grande do Norte&quot;,
+  &quot;cep&quot;: &quot;59600000&quot;,
+  &quot;uf&quot;: &quot;RN&quot;,
+  &quot;gender&quot;: &quot;&quot;
+}
+</code></pre>
+<p>Response de sucesso contém somente:</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;email&quot;: &quot;usuario@example.com&quot;,
+  &quot;name&quot;: &quot;Nome do usuário&quot;,
+  &quot;createdAt&quot;: &quot;2026-01-01T00:00:00.000Z&quot;
+}
+</code></pre>
+<h3 id="dados-do-usuario">Dados do usuário<a class="headerlink" href="#dados-do-usuario" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /auth/me/:id
+Authorization: Bearer &lt;jwt&gt;
+</code></pre>
+<p>Retorna usuário identificado por <code>id</code>, sem senha.</p>
+<blockquote>
+<p>O frontend possui função legada que chama <code>/auth/me</code> sem <code>id</code>. Endpoint implementado atualmente exige <code>:id</code>.</p>
+</blockquote>
+<h2 id="12-doencas-e-triagem-padrao">1.2 Doenças e triagem padrão<a class="headerlink" href="#12-doencas-e-triagem-padrao" title="Permanent link">&para;</a></h2>
+<h3 id="listar-doencas">Listar doenças<a class="headerlink" href="#listar-doencas" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /diseases
+</code></pre>
+<p>Resposta resumida:</p>
+<pre><code class="language-json">[
+  {
+    &quot;id&quot;: &quot;uuid&quot;,
+    &quot;name&quot;: &quot;Nome da doença&quot;
+  }
+]
+</code></pre>
+<h3 id="buscar-doenca-principal">Buscar doença principal<a class="headerlink" href="#buscar-doenca-principal" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /diseases/main
+</code></pre>
+<p>Retorna identificador da primeira doença encontrada. A seleção atual não explicita critério de prioridade.</p>
+<h3 id="buscar-doenca">Buscar doença<a class="headerlink" href="#buscar-doenca" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /diseases/:id
+</code></pre>
+<p>Retorna doença com relações clínicas, incluindo sintomas, critérios e perguntas ativas.</p>
+<h3 id="criar-doenca">Criar doença<a class="headerlink" href="#criar-doenca" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">POST /diseases
+Authorization: Bearer &lt;jwt&gt;
+Content-Type: application/json
+</code></pre>
+<p>Payload base depende de <code>CreateDiseaseDto</code>.</p>
+<h3 id="atualizar-doenca">Atualizar doença<a class="headerlink" href="#atualizar-doenca" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">PATCH /diseases/:id
+Authorization: Bearer &lt;jwt&gt;
+Content-Type: application/json
+</code></pre>
+<p>Payload atual pode conter:</p>
+<ul>
+<li>dados básicos da doença</li>
+<li><code>symptomsInDisease</code></li>
+<li><code>aggravationCriteriasInDisease</code></li>
+<li><code>questionsInDisease</code></li>
+<li><code>results</code></li>
+<li>modo de triagem</li>
+</ul>
+<h3 id="remover-doenca">Remover doença<a class="headerlink" href="#remover-doenca" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">DELETE /diseases/:id
+Authorization: Bearer &lt;jwt&gt;
+</code></pre>
+<h3 id="executar-triagem-padrao">Executar triagem padrão<a class="headerlink" href="#executar-triagem-padrao" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">POST /diseases/triage/:id
+Authorization: Bearer &lt;jwt&gt;
+Content-Type: application/json
+</code></pre>
+<p>Request:</p>
+<pre><code class="language-json">{
+  &quot;userId&quot;: &quot;uuid&quot;,
+  &quot;answers&quot;: [
+    {
+      &quot;questionId&quot;: &quot;uuid&quot;,
+      &quot;answer&quot;: true
+    },
+    {
+      &quot;questionId&quot;: &quot;uuid&quot;,
+      &quot;answer&quot;: false
+    }
+  ],
+  &quot;latitude&quot;: -5.188,
+  &quot;longitude&quot;: -37.3444,
+  &quot;accuracy&quot;: 20
+}
+</code></pre>
+<p><code>latitude</code>, <code>longitude</code> e <code>accuracy</code> são opcionais. Sem coordenadas, backend tenta geocodificar endereço do usuário.</p>
+<p>Response:</p>
+<pre><code class="language-json">{
+  &quot;diseaseId&quot;: &quot;uuid&quot;,
+  &quot;score&quot;: 4,
+  &quot;result&quot;: {
+    &quot;content&quot;: &quot;Resultado interpretado&quot;,
+    &quot;minPontuation&quot;: 0,
+    &quot;maxPontuation&quot;: 5
+  }
+}
+</code></pre>
+<p>Comportamento:</p>
+<ul>
+<li>respostas verdadeiras somam <code>pontuation</code> da pergunta vinculada</li>
+<li>resultado é encontrado em <code>Disease.results</code></li>
+<li>triagem é persistida em <code>RulesTriage</code></li>
+<li>respostas são persistidas em <code>Answer</code></li>
+</ul>
+<h3 id="historico-de-triagens">Histórico de triagens<a class="headerlink" href="#historico-de-triagens" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /diseases/triageHistory/:userId
+Authorization: Bearer &lt;jwt&gt;
+</code></pre>
+<p>Retorna coleção unificada de:</p>
+<ul>
+<li>triagens por regra, com <code>type: "rules"</code></li>
+<li>triagens por modelo, com <code>type: "predictionModel"</code></li>
+</ul>
+<p>Resultado é ordenado por data decrescente.</p>
+<h2 id="13-modelos-via-backend">1.3 Modelos via backend<a class="headerlink" href="#13-modelos-via-backend" title="Permanent link">&para;</a></h2>
+<h3 id="listar-modelos">Listar modelos<a class="headerlink" href="#listar-modelos" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /prediction/models
+</code></pre>
+<p>Backend consulta <code>GET &lt;PREDICTION_API_URL&gt;/modelos</code> e repassa lista.</p>
+<h3 id="listar-modelos-associados-a-doenca">Listar modelos associados a doença<a class="headerlink" href="#listar-modelos-associados-a-doenca" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /prediction/diseases/:id
+</code></pre>
+<p>Backend combina:</p>
+<ul>
+<li>modelos disponíveis no Django</li>
+<li>vínculos persistidos em <code>DiseasePredictionModel</code></li>
+</ul>
+<h3 id="buscar-detalhes-de-modelo">Buscar detalhes de modelo<a class="headerlink" href="#buscar-detalhes-de-modelo" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /prediction/models/:slug
+</code></pre>
+<p>Backend consulta:</p>
+<pre><code class="language-text">GET &lt;PREDICTION_API_URL&gt;/modelos/:slug
+</code></pre>
+<h3 id="associar-modelo-a-doenca">Associar modelo à doença<a class="headerlink" href="#associar-modelo-a-doenca" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">POST /prediction/models/:slug/add-to-disease/:diseaseId
+Authorization: Bearer &lt;jwt&gt;
+</code></pre>
+<p>Sem body. Persiste vínculo por <code>diseaseId</code> + <code>predictionModelSlug</code>.</p>
+<h3 id="remover-associacao">Remover associação<a class="headerlink" href="#remover-associacao" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">DELETE /prediction/models/:slug/remove-from-disease/:diseaseId
+Authorization: Bearer &lt;jwt&gt;
+</code></pre>
+<h3 id="executar-e-persistir-predicao">Executar e persistir predição<a class="headerlink" href="#executar-e-persistir-predicao" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">POST /prediction/models/:slug/predict
+Authorization: Bearer &lt;jwt&gt;
+Content-Type: application/json
+</code></pre>
+<p>Request:</p>
+<pre><code class="language-json">{
+  &quot;userId&quot;: &quot;uuid&quot;,
+  &quot;diseaseId&quot;: &quot;uuid&quot;,
+  &quot;params&quot;: {
+    &quot;idade&quot;: 42,
+    &quot;febre&quot;: 1
+  },
+  &quot;latitude&quot;: -5.188,
+  &quot;longitude&quot;: -37.3444,
+  &quot;accuracy&quot;: 20
+}
+</code></pre>
+<p>Backend envia somente <code>params</code> ao Django:</p>
+<pre><code class="language-http">POST /modelos/:slug/predict/
+Content-Type: application/json
+</code></pre>
+<p>Depois persiste resposta em <code>PredictionModelTriage</code>.</p>
+<blockquote>
+<p>Rotas de <code>prediction</code> estão marcadas com <code>@Public()</code> no controller atual, incluindo predição e associação de modelos. Isso precisa ser revisado antes de considerar contrato de segurança definitivo.</p>
+</blockquote>
+<h2 id="14-dashboard-e-geodados">1.4 Dashboard e geodados<a class="headerlink" href="#14-dashboard-e-geodados" title="Permanent link">&para;</a></h2>
+<h3 id="geodados-agregados">Geodados agregados<a class="headerlink" href="#geodados-agregados" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /dashboard/geodata?diseasesIds=uuid1,uuid2
+Authorization: Bearer &lt;jwt&gt;
+</code></pre>
+<p>Também aceita parâmetro repetido:</p>
+<pre><code class="language-http">GET /dashboard/geodata?diseasesIds=uuid1&amp;diseasesIds=uuid2
+</code></pre>
+<p>Response conceitual:</p>
+<pre><code class="language-json">{
+  &quot;diseases&quot;: {
+    &quot;uuid1&quot;: [
+      [-5.188, -37.344, 0.8]
+    ]
+  },
+  &quot;heatmapData&quot;: [
+    {
+      &quot;latitude&quot;: -5.188,
+      &quot;longitude&quot;: -37.344,
+      &quot;intensity&quot;: 0.8
+    }
+  ],
+  &quot;healthUnits&quot;: []
+}
+</code></pre>
+<p>O backend combina <code>RulesTriage</code> e <code>PredictionModelTriage</code>, limita dados aos últimos 30 dias no fluxo de dashboard e agrega pontos por grade.</p>
+<h3 id="heatmap-por-doenca">Heatmap por doença<a class="headerlink" href="#heatmap-por-doenca" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /diseases/:id/heatmap
+</code></pre>
+<p>Parâmetros opcionais:</p>
+<ul>
+<li><code>startDate</code>: data ISO</li>
+<li><code>endDate</code>: data ISO</li>
+<li><code>maxAccuracy</code>: precisão máxima em metros</li>
+<li><code>limit</code>: limite de registros</li>
+</ul>
+<h3 id="heatmap-geral">Heatmap geral<a class="headerlink" href="#heatmap-geral" title="Permanent link">&para;</a></h3>
+<pre><code class="language-http">GET /diseases/heatmap
+</code></pre>
+<p>Aceita também <code>diseaseId</code> nos parâmetros.</p>
+<h2 id="15-entidades-crud">1.5 Entidades CRUD<a class="headerlink" href="#15-entidades-crud" title="Permanent link">&para;</a></h2>
+<p>Os seguintes recursos seguem padrão NestJS semelhante:</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Base</th>
+<th>Operações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Perguntas</td>
+<td><code>/questions</code></td>
+<td><code>GET</code>, <code>POST</code>, <code>GET /:id</code>, <code>PATCH /:id</code>, <code>DELETE /:id</code></td>
+</tr>
+<tr>
+<td>Sintomas</td>
+<td><code>/symptoms</code></td>
+<td><code>GET</code>, <code>POST</code>, <code>GET /:id</code>, <code>PATCH /:id</code>, <code>DELETE /:id</code></td>
+</tr>
+<tr>
+<td>Critérios</td>
+<td><code>/criteria</code></td>
+<td><code>GET</code>, <code>POST</code>, <code>GET /:id</code>, <code>PATCH /:id</code>, <code>DELETE /:id</code></td>
+</tr>
+<tr>
+<td>Usuários</td>
+<td><code>/users</code></td>
+<td><code>GET</code>, <code>GET /:id</code>, <code>PATCH /:id</code>, <code>DELETE /:id</code></td>
+</tr>
+<tr>
+<td>Unidades de saúde</td>
+<td><code>/health-units</code></td>
+<td><code>GET</code>, <code>POST</code>, <code>GET /:id</code>, <code>PATCH /:id</code>, <code>DELETE /:id</code></td>
+</tr>
+</tbody>
+</table>
+<p>Regras de autenticação devem ser confirmadas por rota no código antes de uso em documentação pública detalhada.</p>
+<hr />
+<h1 id="2-frontend-medis-modelos">2. Frontend -&gt; <code>medis-modelos</code><a class="headerlink" href="#2-frontend-medis-modelos" title="Permanent link">&para;</a></h1>
+<p>Base local:</p>
+<pre><code class="language-text">http://localhost:8000/modelos
+</code></pre>
+<h2 id="21-listar-modelos">2.1 Listar modelos<a class="headerlink" href="#21-listar-modelos" title="Permanent link">&para;</a></h2>
+<pre><code class="language-http">GET /modelos/
+</code></pre>
+<p>Resposta baseada em <code>summary()</code> de cada modelo:</p>
+<pre><code class="language-json">[
+  {
+    &quot;slug&quot;: &quot;covid_predicao_mortalidade&quot;,
+    &quot;name&quot;: &quot;Modelo de mortalidade&quot;,
+    &quot;description&quot;: &quot;Descrição do modelo&quot;
+  }
+]
+</code></pre>
+<p>Os campos exatos dependem do <code>metadata.json</code> de cada modelo. Versões antigas podem usar <code>nome</code> e <code>descricao</code>.</p>
+<h2 id="22-detalhes-do-modelo">2.2 Detalhes do modelo<a class="headerlink" href="#22-detalhes-do-modelo" title="Permanent link">&para;</a></h2>
+<pre><code class="language-http">GET /modelos/:slug/
+</code></pre>
+<p>Retorna metadata completo do modelo. Formato atual esperado:</p>
+<pre><code class="language-json">{
+  &quot;model&quot;: {
+    &quot;slug&quot;: &quot;modelo_exemplo&quot;,
+    &quot;name&quot;: &quot;Modelo exemplo&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;description&quot;: &quot;Descrição&quot;,
+    &quot;algorithm&quot;: &quot;RandomForest&quot;,
+    &quot;prediction_type&quot;: &quot;risco&quot;
+  },
+  &quot;features&quot;: [
+    {
+      &quot;name&quot;: &quot;idade&quot;,
+      &quot;label&quot;: &quot;Idade&quot;,
+      &quot;field_type&quot;: &quot;number&quot;,
+      &quot;type&quot;: &quot;int&quot;,
+      &quot;required&quot;: true,
+      &quot;order&quot;: 1,
+      &quot;validation&quot;: {
+        &quot;min&quot;: 0,
+        &quot;max&quot;: 120
+      }
+    }
+  ],
+  &quot;output&quot;: {
+    &quot;thresholds&quot;: {
+      &quot;low&quot;: 0.3,
+      &quot;high&quot;: 0.6
+    },
+    &quot;positive_class_index&quot;: 1
+  }
+}
+</code></pre>
+<h2 id="23-schema-para-formulario-dinamico">2.3 Schema para formulário dinâmico<a class="headerlink" href="#23-schema-para-formulario-dinamico" title="Permanent link">&para;</a></h2>
+<pre><code class="language-http">GET /modelos/schema/:slug/
+</code></pre>
+<p>Retorna detalhes do modelo. Frontend usa principalmente:</p>
+<ul>
+<li><code>features</code></li>
+<li><code>field_type</code></li>
+<li><code>required</code></li>
+<li><code>order</code></li>
+<li><code>options</code></li>
+<li><code>validation</code></li>
+<li><code>output.thresholds</code></li>
+<li>dados de identificação em <code>model</code></li>
+</ul>
+<p>O frontend converte resposta da API para formato interno antes de renderizar <code>DynamicPredictionForm</code>.</p>
+<h2 id="24-executar-predicao">2.4 Executar predição<a class="headerlink" href="#24-executar-predicao" title="Permanent link">&para;</a></h2>
+<pre><code class="language-http">POST /modelos/:slug/predict/
+Content-Type: application/json
+</code></pre>
+<p>Request:</p>
+<pre><code class="language-json">{
+  &quot;idade&quot;: 42,
+  &quot;febre&quot;: 1
+}
+</code></pre>
+<p>Response típica:</p>
+<pre><code class="language-json">{
+  &quot;model&quot;: {
+    &quot;slug&quot;: &quot;modelo_exemplo&quot;,
+    &quot;name&quot;: &quot;Modelo exemplo&quot;
+  },
+  &quot;request&quot;: {
+    &quot;idade&quot;: 42,
+    &quot;febre&quot;: 1
+  },
+  &quot;message&quot;: &quot;Risco moderado: probabilidade estimada de 45.2%.&quot;,
+  &quot;probability&quot;: 45.2
+}
+</code></pre>
+<p>Comportamento do serviço:</p>
+<ul>
+<li>valida features obrigatórias contra metadata</li>
+<li>carrega modelo pickle, usando cache após primeira carga</li>
+<li>chama <code>predict_proba</code></li>
+<li>usa <code>output.positive_class_index</code> para selecionar classe positiva</li>
+<li>calcula interpretação a partir de <code>output.thresholds</code> e <code>output.messages</code></li>
+</ul>
+<p>Erro de parâmetros ausentes:</p>
+<pre><code class="language-json">{
+  &quot;error&quot;: &quot;Missing required parameters: idade&quot;,
+  &quot;missing&quot;: [&quot;idade&quot;],
+  &quot;expected_features&quot;: [&quot;idade&quot;, &quot;febre&quot;]
+}
+</code></pre>
+<h2 id="25-importar-modelo">2.5 Importar modelo<a class="headerlink" href="#25-importar-modelo" title="Permanent link">&para;</a></h2>
+<pre><code class="language-http">POST /modelos/import/
+Content-Type: multipart/form-data
+</code></pre>
+<p>Campos:</p>
+<ul>
+<li><code>slug</code>: obrigatório</li>
+<li><code>model_file</code>: arquivo <code>.pkl</code> ou <code>.pk1</code>, obrigatório</li>
+<li><code>metadata_file</code>: JSON opcional</li>
+</ul>
+<p>Limites e validações atuais:</p>
+<ul>
+<li>slug em snake_case</li>
+<li>arquivo não pode estar vazio</li>
+<li>tamanho máximo: 200 MB</li>
+<li>modelo precisa ser carregável e compatível</li>
+<li>metadata pode ser enviada ou gerada automaticamente</li>
+</ul>
+<p>Response de sucesso:</p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Model imported successfully.&quot;,
+  &quot;model&quot;: {
+    &quot;slug&quot;: &quot;modelo_exemplo&quot;
+  }
+}
+</code></pre>
+<h2 id="26-atualizar-modelo">2.6 Atualizar modelo<a class="headerlink" href="#26-atualizar-modelo" title="Permanent link">&para;</a></h2>
+<pre><code class="language-http">POST /modelos/:slug/update/
+Content-Type: multipart/form-data
+</code></pre>
+<p>Campos opcionais, mas pelo menos um deve ser fornecido:</p>
+<ul>
+<li><code>model_file</code></li>
+<li><code>metadata_file</code></li>
+</ul>
+<p>Após atualização, módulo é recarregado e registry é reconstruído.</p>
+<h2 id="27-remover-modelo">2.7 Remover modelo<a class="headerlink" href="#27-remover-modelo" title="Permanent link">&para;</a></h2>
+<pre><code class="language-http">DELETE /modelos/:slug/delete/
+</code></pre>
+<p>Remove diretório do modelo, exclui módulo do registry e atualiza listagem em memória.</p>
+<hr />
+<h1 id="3-backend-medis-modelos">3. Backend -&gt; <code>medis-modelos</code><a class="headerlink" href="#3-backend-medis-modelos" title="Permanent link">&para;</a></h1>
+<p>URL configurada por:</p>
+<pre><code class="language-env">PREDICTION_API_URL=http://localhost:8000
+</code></pre>
+<p>Chamadas atuais do <code>PredictionService</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Operação backend</th>
+<th style="text-align: right;">Método</th>
+<th>URL Django</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>listar modelos</td>
+<td style="text-align: right;"><code>GET</code></td>
+<td><code>/modelos</code></td>
+</tr>
+<tr>
+<td>detalhes</td>
+<td style="text-align: right;"><code>GET</code></td>
+<td><code>/modelos/:slug</code></td>
+</tr>
+<tr>
+<td>predição</td>
+<td style="text-align: right;"><code>POST</code></td>
+<td><code>/modelos/:slug/predict/</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contrato-de-predicao-do-backend">Contrato de predição do backend<a class="headerlink" href="#contrato-de-predicao-do-backend" title="Permanent link">&para;</a></h2>
+<p>O backend recebe envelope de negócio próprio:</p>
+<pre><code class="language-json">{
+  &quot;userId&quot;: &quot;uuid&quot;,
+  &quot;diseaseId&quot;: &quot;uuid&quot;,
+  &quot;params&quot;: {
+    &quot;feature&quot;: 1
+  },
+  &quot;latitude&quot;: -5.188,
+  &quot;longitude&quot;: -37.3444,
+  &quot;accuracy&quot;: 20
+}
+</code></pre>
+<p>Mas envia ao Django somente:</p>
+<pre><code class="language-json">{
+  &quot;feature&quot;: 1
+}
+</code></pre>
+<p>Isso separa:</p>
+<ul>
+<li>contexto de persistência, pertencente ao backend</li>
+<li>parâmetros algorítmicos, pertencentes ao modelo</li>
+</ul>
+<h2 id="resposta-consumida-pelo-backend">Resposta consumida pelo backend<a class="headerlink" href="#resposta-consumida-pelo-backend" title="Permanent link">&para;</a></h2>
+<p>Backend espera resposta compatível com <code>PredictionResponse</code>, principalmente:</p>
+<ul>
+<li><code>model</code></li>
+<li><code>message</code></li>
+<li>payload da predição</li>
+</ul>
+<p>O objeto completo é armazenado como JSON em <code>PredictionModelTriage.predictionModel</code>; <code>message</code> é copiada para <code>PredictionModelTriage.result</code>.</p>
+<hr />
+<h1 id="4-contrato-de-modelo-e-metadados">4. Contrato de modelo e metadados<a class="headerlink" href="#4-contrato-de-modelo-e-metadados" title="Permanent link">&para;</a></h1>
+<h2 id="arquivos-por-modelo">Arquivos por modelo<a class="headerlink" href="#arquivos-por-modelo" title="Permanent link">&para;</a></h2>
+<p>Cada modelo é descoberto em subdiretório de <code>modelos/</code> e deve conter, no mínimo:</p>
+<pre><code class="language-text">modelo_slug/
+  __init__.py
+  metadata.json
+  modelo.pkl ou modelo.pk1
+</code></pre>
+<h2 id="interface-publica-do-modulo">Interface pública do módulo<a class="headerlink" href="#interface-publica-do-modulo" title="Permanent link">&para;</a></h2>
+<p>Módulo carregado deve expor:</p>
+<pre><code class="language-python">summary()
+details()
+predict(params)
+</code></pre>
+<p>Modelos gerados pelo sistema delegam essas funções para <code>MLModel</code>.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<p>Cada feature deve permitir ao frontend descobrir:</p>
+<ul>
+<li>nome técnico</li>
+<li>label</li>
+<li>tipo de campo</li>
+<li>obrigatoriedade</li>
+<li>ordem</li>
+<li>opções, quando aplicável</li>
+<li>validações</li>
+</ul>
+<h2 id="saida">Saída<a class="headerlink" href="#saida" title="Permanent link">&para;</a></h2>
+<p>A seção <code>output</code> deve documentar pelo menos:</p>
+<ul>
+<li>limiares de interpretação</li>
+<li>mensagens por nível</li>
+<li><code>positive_class_index</code></li>
+</ul>
+<p>Exemplo:</p>
+<pre><code class="language-json">{
+  &quot;output&quot;: {
+    &quot;thresholds&quot;: {
+      &quot;low&quot;: 0.3,
+      &quot;high&quot;: 0.6
+    },
+    &quot;messages&quot;: {
+      &quot;low&quot;: &quot;Risco baixo: {probability}%&quot;,
+      &quot;moderate&quot;: &quot;Risco moderado: {probability}%&quot;,
+      &quot;high&quot;: &quot;Risco alto: {probability}%&quot;
+    },
+    &quot;positive_class_index&quot;: 1
+  }
+}
+</code></pre>
+<blockquote>
+<p><code>positive_class_index</code> não é detalhe cosmético. Índice incorreto pode inverter interpretação de probabilidade e resultado clínico.</p>
+</blockquote>
+<hr />
+<h1 id="5-tratamento-de-erros">5. Tratamento de erros<a class="headerlink" href="#5-tratamento-de-erros" title="Permanent link">&para;</a></h1>
+<h2 id="backend_1">Backend<a class="headerlink" href="#backend_1" title="Permanent link">&para;</a></h2>
+<p>Erros NestJS podem incluir:</p>
+<ul>
+<li><code>400</code> — payload inválido ou regra de validação</li>
+<li><code>401</code> — não autenticado ou credencial inválida</li>
+<li><code>404</code> — entidade/modelo não encontrado</li>
+<li><code>409</code> — conflito de unicidade ou recurso existente</li>
+<li><code>500</code> — falha interna ou integração</li>
+</ul>
+<h2 id="servico-de-modelos_1">Serviço de modelos<a class="headerlink" href="#servico-de-modelos_1" title="Permanent link">&para;</a></h2>
+<p>Erros observados no código incluem:</p>
+<pre><code class="language-json">{
+  &quot;error&quot;: &quot;Model not found.&quot;
+}
+</code></pre>
+<pre><code class="language-json">{
+  &quot;error&quot;: &quot;Invalid metadata_file JSON.&quot;
+}
+</code></pre>
+<pre><code class="language-json">{
+  &quot;error&quot;: &quot;Missing required parameters: feature_name&quot;,
+  &quot;missing&quot;: [&quot;feature_name&quot;],
+  &quot;expected_features&quot;: [&quot;feature_name&quot;]
+}
+</code></pre>
+<p>Importação também pode retornar <code>warnings</code> quando compatibilidade é válida, mas há ressalvas.</p>
+<h2 id="regra-para-clientes">Regra para clientes<a class="headerlink" href="#regra-para-clientes" title="Permanent link">&para;</a></h2>
+<p>Clientes devem:</p>
+<ul>
+<li>verificar status HTTP</li>
+<li>não assumir que toda resposta contém <code>message</code></li>
+<li>exibir <code>error</code> quando presente</li>
+<li>tratar respostas de modelo como contrato versionável</li>
+</ul>
+<hr />
+<h1 id="6-divergencias-e-riscos-contratuais-conhecidos">6. Divergências e riscos contratuais conhecidos<a class="headerlink" href="#6-divergencias-e-riscos-contratuais-conhecidos" title="Permanent link">&para;</a></h1>
+<h2 id="61-rota-legada-models">6.1 Rota legada <code>/models</code><a class="headerlink" href="#61-rota-legada-models" title="Permanent link">&para;</a></h2>
+<p>Existe hook frontend que consulta:</p>
+<pre><code class="language-text">GET http://localhost:8000/models/:slug/
+</code></pre>
+<p>Mas rotas Django atuais estão sob:</p>
+<pre><code class="language-text">GET http://localhost:8000/modelos/:slug/
+</code></pre>
+<p>Esse hook parece legado ou incompatível e deve ser corrigido/removido após confirmação de uso.</p>
+<h2 id="62-nomes-de-campos-antigos-e-novos">6.2 Nomes de campos antigos e novos<a class="headerlink" href="#62-nomes-de-campos-antigos-e-novos" title="Permanent link">&para;</a></h2>
+<p>README antigo usa campos como:</p>
+<ul>
+<li><code>nome</code></li>
+<li><code>descricao</code></li>
+</ul>
+<p>Implementação mais recente usa:</p>
+<ul>
+<li><code>name</code></li>
+<li><code>description</code></li>
+<li><code>model_info</code></li>
+<li><code>features</code></li>
+<li><code>output</code></li>
+</ul>
+<p>É necessário escolher formato canônico e, se necessário, documentar versão de compatibilidade.</p>
+<h2 id="63-autorizacao-de-endpoints">6.3 Autorização de endpoints<a class="headerlink" href="#63-autorizacao-de-endpoints" title="Permanent link">&para;</a></h2>
+<p>O controller de predição marca como públicas operações que alteram estado:</p>
+<ul>
+<li>associação de modelo a doença</li>
+<li>remoção de associação</li>
+<li>predição persistida pelo backend</li>
+</ul>
+<p>Isso deve ser revisado antes de expor ambiente além do desenvolvimento.</p>
+<h2 id="64-contrato-duplicado-de-predicao">6.4 Contrato duplicado de predição<a class="headerlink" href="#64-contrato-duplicado-de-predicao" title="Permanent link">&para;</a></h2>
+<p>Predição dinâmica passa pelo Django duas vezes:</p>
+<ol>
+<li>frontend para exibição</li>
+<li>backend para persistência</li>
+</ol>
+<p>Isso pode produzir divergência se modelo ou metadata mudar entre chamadas.</p>
+<hr />
+<h1 id="7-proxima-evolucao-do-contrato">7. Próxima evolução do contrato<a class="headerlink" href="#7-proxima-evolucao-do-contrato" title="Permanent link">&para;</a></h1>
+<p>Recomendações:</p>
+<ol>
+<li>definir formato canônico de metadata</li>
+<li>versionar contrato do serviço de modelos</li>
+<li>corrigir ou remover rota frontend <code>/models</code></li>
+<li>proteger endpoints administrativos</li>
+<li>centralizar predição no backend, se essa for decisão arquitetural</li>
+<li>adicionar testes de contrato</li>
+<li>documentar schemas OpenAPI ou JSON Schema</li>
+<li>padronizar payloads de erro</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
